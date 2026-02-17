@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Procurement Life Cycle – Training for New Employees</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #f8f9fa;
+    }
+    h1, h2 {
+      color: #2c3e50;
+      text-align: center;
+    }
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background: #3498db;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+      border-radius: 3px;
+    }
+    .step {
+      padding: 20px 40px;
+      position: relative;
+      background: white;
+      border-radius: 8px;
+      margin: 30px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 45%;
+    }
+    .step.left {
+      left: 0;
+    }
+    .step.right {
+      left: 55%;
+    }
+    .step::after {
+      content: '';
+      position: absolute;
+      top: 30px;
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+    }
+    .step.left::after {
+      right: -20px;
+      border-left: 20px solid white;
+    }
+    .step.right::after {
+      left: -20px;
+      border-right: 20px solid white;
+    }
+    .step-number {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: #3498db;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 50px;
+      font-size: 1.4em;
+      font-weight: bold;
+      top: 20px;
+      z-index: 1;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .step.left .step-number { left: -25px; }
+    .step.right .step-number { right: -25px; }
+    .department {
+      font-weight: bold;
+      color: #e74c3c;
+      margin: 8px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 40px 0;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    th, td {
+      padding: 14px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background: #3498db;
+      color: white;
+    }
+    tr:nth-child(even) { background: #f9f9f9; }
+    .highlight { background: #fffacd; }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Procurement Life Cycle</h1>
+  <h2>Training Guide for Newly Onboarded Employees</h2>
+
+  <div class="timeline">
+
+    <div class="step left">
+      <div class="step-number">1</div>
+      <h3>Need Identification</h3>
+      <p class="department">Responsible: Requesting Department (User / Requester)</p>
+      <ul>
+        <li>Identify business / operational need</li>
+        <li>Define detailed specifications / requirements</li>
+        <li>Prepare and submit Purchase Requisition</li>
+      </ul>
+    </div>
+
+    <div class="step right">
+      <div class="step-number">2</div>
+      <h3>Requisition Review & Approval</h3>
+      <p class="department">Responsible: Approving Manager / Department Head / Finance</p>
+      <ul>
+        <li>Verify necessity, completeness & budget availability</li>
+        <li>Approve / Reject / Return for revision</li>
+      </ul>
+    </div>
+
+    <div class="step left">
+      <div class="step-number">3</div>
+      <h3>Sourcing & Supplier Market Research</h3>
+      <p class="department">Responsible: Procurement Department</p>
+      <ul>
+        <li>Identify potential suppliers / vendors</li>
+        <li>Issue RFQ / RFP / RFI</li>
+        <li>Collect and log quotations / proposals</li>
+      </ul>
+    </div>
+
+    <div class="step right">
+      <div class="step-number">4</div>
+      <h3>Bid / Quote Evaluation & Selection</h3>
+      <p class="department">Responsible: Procurement (+ Technical / Finance if needed)</p>
+      <ul>
+        <li>Compare on price, quality, delivery, terms, etc.</li>
+        <li>Shortlist and select preferred supplier</li>
+      </ul>
+    </div>
+
+    <div class="step left">
+      <div class="step-number">5</div>
+      <h3>Negotiation & Contract Award</h3>
+      <p class="department">Responsible: Procurement + Legal</p>
+      <ul>
+        <li>Negotiate commercial & delivery terms</li>
+        <li>Legal review for compliance</li>
+        <li>Finalize and sign contract / agreement</li>
+      </ul>
+    </div>
+
+    <div class="step right">
+      <div class="step-number">6</div>
+      <h3>Purchase Order Issuance</h3>
+      <p class="department">Responsible: Procurement Department</p>
+      <ul>
+        <li>Create and issue official Purchase Order (PO)</li>
+        <li>Send PO to supplier & obtain acknowledgment</li>
+      </ul>
+    </div>
+
+    <div class="step left">
+      <div class="step-number">7</div>
+      <h3>Goods / Services Receipt & Inspection</h3>
+      <p class="department">Responsible: Receiving / Warehouse + Requesting Dept + QA</p>
+      <ul>
+        <li>Receive and physically inspect items/services</li>
+        <li>Verify quantity, quality & specifications</li>
+        <li>Record Goods Receipt Note (GRN)</li>
+      </ul>
+    </div>
+
+    <div class="step right">
+      <div class="step-number">8</div>
+      <h3>Invoice Receipt & 3-Way Matching</h3>
+      <p class="department">Responsible: Finance / Accounts Payable</p>
+      <ul>
+        <li>Receive supplier invoice</li>
+        <li>Match PO + Goods Receipt + Invoice</li>
+        <li>Resolve any discrepancies</li>
+      </ul>
+    </div>
+
+    <div class="step left">
+      <div class="step-number">9</div>
+      <h3>Payment Processing</h3>
+      <p class="department">Responsible: Finance / Treasury</p>
+      <ul>
+        <li>Approve and execute payment</li>
+        <li>Update accounting / financial records</li>
+      </ul>
+    </div>
+
+    <div class="step right">
+      <div class="step-number">10</div>
+      <h3>Performance Review & Procurement Closeout</h3>
+      <p class="department">Responsible: Procurement + Requesting Department</p>
+      <ul>
+        <li>Evaluate supplier performance</li>
+        <li>Document lessons learned & feedback</li>
+        <li>Update vendor records & archive file</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <h2>Quick Department Responsibility Summary</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Step</th>
+        <th>Main Responsible Department(s)</th>
+        <th>Key Deliverable</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Requesting Department</td><td>Purchase Requisition</td></tr>
+      <tr><td>2</td><td>Management / Finance</td><td>Approved Requisition</td></tr>
+      <tr><td>3</td><td>Procurement</td><td>Quotations / Bids</td></tr>
+      <tr><td>4</td><td>Procurement (+ Technical/Finance)</td><td>Selected Supplier</td></tr>
+      <tr><td>5</td><td>Procurement + Legal</td><td>Signed Contract</td></tr>
+      <tr><td>6</td><td>Procurement</td><td>Issued Purchase Order</td></tr>
+      <tr><td>7</td><td>Receiving / Requesting / QA</td><td>Goods Receipt Note</td></tr>
+      <tr><td>8</td><td>Finance / Accounts Payable</td><td>Verified Invoice</td></tr>
+      <tr><td>9</td><td>Finance</td><td>Payment Completed</td></tr>
+      <tr><td>10</td><td>Procurement + Requesting</td><td>Vendor Performance Record</td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    <p>Prepared for training purposes • Last updated February 2026</p>
+  </footer>
+
+</body>
+</html>
